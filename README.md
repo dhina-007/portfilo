@@ -2,6 +2,9 @@
 
 This is the personal portfolio website of **Dhinagar S**, a pre-final year Computer Science student and aspiring Software Engineer. The website showcases skills, projects, education, certifications, and contact details.
 
+![Screenshot 2025-02-01 175944](https://github.com/user-attachments/assets/2aba93d4-2941-4443-9279-cd8f83331642)
+
+
 ## 🌐 Live Demo
 [Live Portfolio Link](#) (Add your live website link here)
 
@@ -66,5 +69,5 @@ Enthusiastic Computer Science student with a strong interest in web development.
 ## 🚀 How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-github-username/portfolio-website.git
+   git clone https://github.com/dhina-007/portfilo.git
 
