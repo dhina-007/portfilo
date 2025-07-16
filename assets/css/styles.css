@@ -218,6 +218,8 @@ img {
 }
 .home__blob-img {
   width: 360px;
+  transform: scale(1.5);
+    transform-origin: center center;
 }
 
 /*BUTTONS*/
