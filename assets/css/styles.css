@@ -569,6 +569,95 @@ img {
   animation: fadeSlideUp 0.6s ease forwards;
 }
 
+/* ===== EXPERIENCE ===== */
+.timeline{ }
+
+/* Vertical timeline layout */
+.timeline {
+  position: relative;
+}
+
+.timeline__line {
+  position: absolute;
+  left: 36px;
+  top: 8px;
+  bottom: 8px;
+  width: 3px;
+  background: linear-gradient(180deg, rgba(43,140,255,0.15), rgba(93,224,214,0.15));
+  border-radius: 3px;
+  z-index: 0;
+}
+
+.timeline__container {
+  display: grid;
+  gap: 1rem;
+  padding-left: 80px; /* leave room for the line and logos */
+  grid-auto-rows: min-content;
+}
+
+.timeline__card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  box-shadow: 0 10px 30px rgba(14,36,49,0.06);
+  border: 1px solid rgba(14,36,49,0.04);
+  position: relative;
+  z-index: 2;
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.timeline__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 46px rgba(14,36,49,0.10);
+}
+
+.timeline__logo {
+  width: 56px;
+  height: 56px;
+  margin-left: -80px; /* pull logo over the line */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.company-logo{
+  width:56px;
+  height:56px;
+  border-radius:12px;
+  object-fit:cover;
+  display:block;
+}
+
+.timeline__content { flex: 1; }
+
+.timeline__header { display:flex; justify-content:space-between; gap:1rem; align-items:flex-start }
+.timeline__header h3 { margin:0; font-size:1.08rem; color:var(--second-color) }
+.timeline__company { margin:0.15rem 0 0 0; color:#666; font-size:.95rem }
+.timeline__meta { color:#777; font-size:.9rem; white-space:nowrap }
+.timeline__summary { margin:0.4rem 0; color:#444 }
+
+.timeline__card ul { margin:0.3rem 0 0 1rem; padding:0; color:#333 }
+.timeline__card ul li { margin-bottom:.45rem; line-height:1.5 }
+
+.timeline__tags { margin-top:0.8rem; display:flex; gap:.5rem; flex-wrap:wrap }
+.timeline__tag { background: rgba(43,140,255,0.10); color: var(--first-color); padding:.28rem .6rem; border-radius:999px; font-weight:600; font-size:.85rem }
+
+/* badges inside summary */
+.timeline__badge { font-weight:700; color:var(--first-color); padding:0 6px }
+
+/* Visible by default; ScrollReveal will apply inline animation styles when running */
+.timeline__card { opacity: 1; transform: none; transition: opacity .45s ease, transform .45s cubic-bezier(.2,.9,.2,1); }
+
+@media screen and (max-width: 767px){
+  .timeline__line { left: 22px }
+  .timeline__container { padding-left: 64px }
+  .timeline__logo { margin-left: -64px }
+  .timeline__meta { white-space: normal; text-align:right }
+}
+
 .about__icons img:hover {
   transform: scale(1.2) rotate(5deg);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);

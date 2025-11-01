@@ -21,6 +21,7 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
                     <li class="nav__item"><a href="#certification" class="nav__link">Certification</a></li>
@@ -113,6 +114,116 @@
     </div>
 </section>
 
+        <!--===== EXPERIENCE (Vertical Timeline) =====-->
+        <section class="experience section" id="experience">
+            <h2 class="section-title">💼 Professional Experience</h2>
+
+            <div class="timeline bd-grid">
+                <div class="timeline__line" aria-hidden="true"></div>
+
+                <div class="timeline__container">
+                    <!-- Card 1 -->
+                    <article class="timeline__card">
+                        <div class="timeline__logo" aria-hidden="true">
+                            <img src="assets/img/infomind.jpeg" alt="Infomind AI logo" class="company-logo">
+                        </div>
+
+                        <div class="timeline__content">
+                            <header class="timeline__header">
+                                <div>
+                                    <h3>Java Backend Developer</h3>
+                                    <p class="timeline__company">Infomind AI</p>
+                                </div>
+                                <div class="timeline__meta">Jan 2025 – Present · 10 mo</div>
+                            </header>
+
+                            <p class="timeline__summary">Enterprise integrations and API management. Focus: <span class="timeline__badge">scalability</span>, <span class="timeline__badge">security</span>, observability.</p>
+
+                            <ul>
+                                <li>➤ Built scalable services with <strong>Spring Boot</strong>, <strong>Liquibase</strong>, and <strong>REST APIs</strong>.</li>
+                                <li>➤ Integrated <strong>ActiveMQ</strong> for reliable async messaging and decoupling.</li>
+                                <li>➤ Automated configs, CI tasks, and generated periodic <strong>PDF reports</strong> from backend datasets.</li>
+                                <li>➤ Improved API performance and hardening of data access pathways.</li>
+                                <li>➤ Developed a <strong>Job Tracker</strong> web app during a 1-month trainee internship (Spring Boot + React).</li>
+                            </ul>
+
+                            <div class="timeline__tags">
+                                <span class="timeline__tag">Spring Boot</span>
+                                <span class="timeline__tag">Liquibase</span>
+                                <span class="timeline__tag">ActiveMQ</span>
+                                <span class="timeline__tag">REST API</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="timeline__card">
+                        <div class="timeline__logo" aria-hidden="true">
+                            <img src="assets/img/edunetfoundation_logo.jpeg" alt="Edunet Foundation logo" class="company-logo">
+                        </div>
+
+                        <div class="timeline__content">
+                            <header class="timeline__header">
+                                <div>
+                                    <h3>MERN Stack Developer Intern</h3>
+                                    <p class="timeline__company">Edunet Foundation</p>
+                                </div>
+                                <div class="timeline__meta">Aug 2024 – Sep 2024 · 2 mo</div>
+                            </header>
+
+                            <p class="timeline__summary">Built a Personal Finance Manager with realtime features and secure auth (JWT).</p>
+
+                            <ul>
+                                <li>Developed full MERN app with <strong>React</strong> frontend and <strong>Express/Node</strong> backend.</li>
+                                <li>➤ Implemented <strong>JWT</strong>-based authentication and role-protected routes.</li>
+                                <li>➤ Integrated <strong>MongoDB Atlas</strong> for cloud-hosted persistence and backups.</li>
+                                <li>➤ Optimized frontend performance and responsive UI using React and Context API.</li>
+                            </ul>
+
+                            <div class="timeline__tags">
+                                <span class="timeline__tag">MERN</span>
+                                <span class="timeline__tag">JWT</span>
+                                <span class="timeline__tag">MongoDB Atlas</span>
+                                <span class="timeline__tag">React</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="timeline__card">
+                        <div class="timeline__logo" aria-hidden="true">
+                            <img src="assets/img/kaashiv_infotech_logo.jpeg" alt="Kaashav Infotech logo" class="company-logo">
+                        </div>
+
+                        <div class="timeline__content">
+                            <header class="timeline__header">
+                                <div>
+                                    <h3>Full Stack Developer Intern</h3>
+                                    <p class="timeline__company">Kaashav Infotech</p>
+                                </div>
+                                <div class="timeline__meta">Jun 2024 – Jul 2024 · 1 mo</div>
+                            </header>
+
+                            <p class="timeline__summary">Delivered production-ready features across frontend and backend; emphasis on fast iteration and deployment.</p>
+
+                            <ul>
+                                <li>➤ Built REST APIs with <strong>Node.js</strong> and <strong>Express</strong> and dynamic UIs with <strong>React</strong>.</li>
+                                <li>➤ Optimized MongoDB queries to reduce response times and costs.</li>
+                                <li>➤ Deployed and maintained web apps on cloud platforms and participated in CI/CD workflows.</li>
+                            </ul>
+
+                            <div class="timeline__tags">
+                                <span class="timeline__tag">React</span>
+                                <span class="timeline__tag">Node.js</span>
+                                <span class="timeline__tag">Express</span>
+                                <span class="timeline__tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
 
         <!--===== SKILLS =====-->
         <section class="skills section" id="skills">
@@ -125,7 +236,7 @@
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
+                                <span class="skills__name">ReactJS</span>
                             </div>
                             <div class="skills__bar skills__html">
 
@@ -137,7 +248,7 @@
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
+                                <span class="skills__name">Java</span>
                             </div>
                             <div class="skills__bar skills__css">
                                 
@@ -161,7 +272,7 @@
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
+                                <span class="skills__name">NodeJS</span>
                             </div>
                             <div class="skills__bar skills__ux">
                                 
@@ -234,6 +345,14 @@
                 <div class="certification__item">
                     <h3>AWS Academy Machine Learning Foundations</h3>
                     <p>AWS Academy</p>
+                </div>
+                <div class="certification__item">
+                    <h3>Python For Data Science</h3>
+                    <p>NPTEL</p>
+                </div>
+                <div class="certification__item">
+                    <h3>Programming In Java</h3>
+                    <p>NPTEL</p>
                 </div>
             </div>
         </section>

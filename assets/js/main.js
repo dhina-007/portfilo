@@ -72,6 +72,8 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 sr.reveal('.education__container, .certification__container', {
     interval: 200
 });
+// reveal each timeline card one by one
+sr.reveal('.timeline__card', { interval: 180, distance: '24px', origin: 'bottom', delay: 120 });
 
 
 
